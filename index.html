@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trang web cơ bản</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      }
+      body {
+        margin: 0;
+        background: #f5f7fb;
+        color: #1f2937;
+      }
+      header {
+        background: linear-gradient(120deg, #2563eb, #1d4ed8);
+        color: #fff;
+        padding: 48px 24px;
+        text-align: center;
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 32px 24px 48px;
+      }
+      .card-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      }
+      .card h3 {
+        margin-top: 0;
+      }
+      footer {
+        text-align: center;
+        padding: 20px 24px 40px;
+        color: #6b7280;
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        border-radius: 999px;
+        background: #fff;
+        color: #1d4ed8;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Xin chào! Đây là trang web cơ bản</h1>
+      <p>Nơi bạn có thể bắt đầu xây dựng dự án của mình.</p>
+      <a class="cta" href="#gioi-thieu">Khám phá ngay</a>
+    </header>
+    <main>
+      <section id="gioi-thieu">
+        <h2>Giới thiệu nhanh</h2>
+        <p>
+          Trang web này gồm một phần tiêu đề, nội dung chính và các thẻ giới
+          thiệu để bạn dễ dàng tùy biến.
+        </p>
+      </section>
+      <section>
+        <h2>Điểm nổi bật</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Thiết kế gọn gàng</h3>
+            <p>Giao diện tối giản giúp người dùng tập trung vào nội dung.</p>
+          </article>
+          <article class="card">
+            <h3>Dễ chỉnh sửa</h3>
+            <p>Chỉ cần sửa HTML/CSS là bạn đã có trang mới theo ý muốn.</p>
+          </article>
+          <article class="card">
+            <h3>Tương thích</h3>
+            <p>Hiển thị tốt trên cả máy tính lẫn thiết bị di động.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>© 2025 Trang web cơ bản. Cảm ơn bạn đã ghé thăm!</footer>
+  </body>
+</html>
